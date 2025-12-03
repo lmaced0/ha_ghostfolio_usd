@@ -69,7 +69,7 @@ class GhostfolioCurrentValueSensor(GhostfolioBaseSensor):
     _attr_translation_key = "current_value"
     _attr_device_class = SensorDeviceClass.MONETARY
     _attr_state_class = SensorStateClass.TOTAL
-    _attr_native_unit_of_measurement = "EUR"
+    _attr_native_unit_of_measurement = "USD"
     _attr_suggested_display_precision = 2
 
     def __init__(self, coordinator: GhostfolioDataUpdateCoordinator, config_entry: ConfigEntry) -> None:
@@ -103,7 +103,7 @@ class GhostfolioNetPerformanceSensor(GhostfolioBaseSensor):
     _attr_translation_key = "net_performance"
     _attr_device_class = SensorDeviceClass.MONETARY
     _attr_state_class = SensorStateClass.TOTAL
-    _attr_native_unit_of_measurement = "EUR"
+    _attr_native_unit_of_measurement = "USD"
     _attr_suggested_display_precision = 2
 
     def __init__(self, coordinator: GhostfolioDataUpdateCoordinator, config_entry: ConfigEntry) -> None:
@@ -149,7 +149,7 @@ class GhostfolioTotalInvestmentSensor(GhostfolioBaseSensor):
     _attr_translation_key = "total_investment"
     _attr_device_class = SensorDeviceClass.MONETARY
     _attr_state_class = SensorStateClass.TOTAL
-    _attr_native_unit_of_measurement = "EUR"
+    _attr_native_unit_of_measurement = "USD"
     _attr_suggested_display_precision = 2
 
     def __init__(self, coordinator: GhostfolioDataUpdateCoordinator, config_entry: ConfigEntry) -> None:
@@ -171,7 +171,7 @@ class GhostfolioNetPerformanceWithCurrencySensor(GhostfolioBaseSensor):
     _attr_translation_key = "net_performance_with_currency"
     _attr_device_class = SensorDeviceClass.MONETARY
     _attr_state_class = SensorStateClass.TOTAL
-    _attr_native_unit_of_measurement = "EUR"
+    _attr_native_unit_of_measurement = "USD"
     _attr_suggested_display_precision = 2
 
     def __init__(self, coordinator: GhostfolioDataUpdateCoordinator, config_entry: ConfigEntry) -> None:
